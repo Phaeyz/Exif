@@ -24,7 +24,7 @@ public class TagGpsInfo : Tag
 | static readonly [GpsDestLongitude](TagGpsInfo/GpsDestLongitude.md) | Indicates the longitude of the destination point. The longitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. If longitude is expressed as degrees, minutes and seconds, a typical format would be ddd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format would be ddd/1,mmmm/100,0/1. |
 | static readonly [GpsDestLongitudeRef](TagGpsInfo/GpsDestLongitudeRef.md) | Indicates whether the longitude of the destination point is east or west longitude. ASCII "E" indicates east longitude, and "W" is west longitude. |
 | static readonly [GpsDifferential](TagGpsInfo/GpsDifferential.md) | Indicates whether differential correction is applied to the GPS receiver. |
-| static readonly [Gpsdop](TagGpsInfo/Gpsdop.md) | Indicates the GPS DOP (data degree of precision). An HDOP value is written during two-dimensional measurement, and PDOP during three-dimensional measurement. |
+| static readonly [GpsDop](TagGpsInfo/GpsDop.md) | Indicates the GPS DOP (data degree of precision). An HDOP value is written during two-dimensional measurement, and PDOP during three-dimensional measurement. |
 | static readonly [GpsHPositioningError](TagGpsInfo/GpsHPositioningError.md) | This tag indicates horizontal positioning errors in meters. |
 | static readonly [GpsImgDirection](TagGpsInfo/GpsImgDirection.md) | Indicates the direction of the image when it was captured. The range of values is from 0.00 to 359.99. |
 | static readonly [GpsImgDirectionRef](TagGpsInfo/GpsImgDirectionRef.md) | Indicates the reference for giving the direction of the image when it is captured. "T" denotes true direction and "M" is magnetic direction. |
@@ -39,10 +39,10 @@ public class TagGpsInfo : Tag
 | static readonly [GpsSpeed](TagGpsInfo/GpsSpeed.md) | Indicates the speed of GPS receiver movement. |
 | static readonly [GpsSpeedRef](TagGpsInfo/GpsSpeedRef.md) | Indicates the unit used to express the GPS receiver speed of movement. "K" "M" and "N" represents kilometers per hour, miles per hour, and knots. |
 | static readonly [GpsStatus](TagGpsInfo/GpsStatus.md) | Indicates the status of the GPS receiver when the image is recorded. "A" means measurement is in progress, and "V" means the measurement is Interoperability. |
-| static readonly [GpsTimeStamp](TagGpsInfo/GpsTimeStamp.md) |  |
+| static readonly [GpsTimeStamp](TagGpsInfo/GpsTimeStamp.md) | Indicates the time as UTC (Coordinated Universal Time). &lt;TimeStamp&gt; is expressed as three RATIONAL values giving the hour, minute, and second (atomic clock). |
 | static readonly [GpsTrack](TagGpsInfo/GpsTrack.md) | Indicates the direction of GPS receiver movement. The range of values is from 0.00 to 359.99. |
 | static readonly [GpsTrackRef](TagGpsInfo/GpsTrackRef.md) | Indicates the reference for giving the direction of GPS receiver movement. "T" denotes true direction and "M" is magnetic direction. |
-| static readonly [GpsVersionId](TagGpsInfo/GpsVersionId.md) |  |
+| static readonly [GpsVersionId](TagGpsInfo/GpsVersionId.md) | Indicates the version of &lt;GPSInfoIFD&gt;. The version is given as 2.0.0.0. This tag is mandatory when &lt;GPSInfo&gt; tag is present. (Note: The &lt;GPSVersionID&gt; tag is given in bytes, unlike the &lt;ExifVersion&gt; tag. When the version is 2.0.0.0, the tag value is 02000000.H). |
 
 ## See Also
 

@@ -102,7 +102,7 @@ public class TagIfd : Tag
     public static readonly Tag XResolution = Create(Root, null, 0x011A, "XResolution", true, [("Exif.Image.XResolution", "Image")]);
 
     /// <summary>
-    /// The number of pixels per <ResolutionUnit> in the <ImageLength> direction. The same value as <XResolution> is designated.
+    /// The number of pixels per &lt;ResolutionUnit&gt; in the &lt;ImageLength&gt; direction. The same value as &lt;XResolution&gt; is designated.
     /// </summary>
     /// <remarks>
     /// Expected type is URational.
@@ -118,7 +118,7 @@ public class TagIfd : Tag
     public static readonly Tag PlanarConfiguration = Create(Root, null, 0x011C, "PlanarConfiguration", true, [("Exif.Image.PlanarConfiguration", "Image")]);
 
     /// <summary>
-    /// The unit for measuring <XResolution> and <YResolution>. The same unit is used for both <XResolution> and <YResolution>. If the image resolution is unknown, 2 (inches) is designated.
+    /// The unit for measuring &lt;XResolution&gt; and &lt;YResolution&gt;. The same unit is used for both &lt;XResolution&gt; and &lt;YResolution&gt;. If the image resolution is unknown, 2 (inches) is designated.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16.
@@ -126,7 +126,7 @@ public class TagIfd : Tag
     public static readonly Tag ResolutionUnit = Create(Root, null, 0x0128, "ResolutionUnit", true, [("Exif.Image.ResolutionUnit", "Image")]);
 
     /// <summary>
-    /// A transfer function for the image, described in tabular style. Normally this tag is not necessary, since color space is specified in the color space information tag (<ColorSpace>).
+    /// A transfer function for the image, described in tabular style. Normally this tag is not necessary, since color space is specified in the color space information tag (&lt;ColorSpace&gt;).
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16[768].
@@ -158,7 +158,7 @@ public class TagIfd : Tag
     public static readonly Tag Artist = Create(Root, null, 0x013B, "Artist", true, [("Exif.Image.Artist", "Image")]);
 
     /// <summary>
-    /// The chromaticity of the white point of the image. Normally this tag is not necessary, since color space is specified in the colorspace information tag (<ColorSpace>).
+    /// The chromaticity of the white point of the image. Normally this tag is not necessary, since color space is specified in the colorspace information tag (&lt;ColorSpace&gt;).
     /// </summary>
     /// <remarks>
     /// Expected type is URational[2].
@@ -166,7 +166,7 @@ public class TagIfd : Tag
     public static readonly Tag WhitePoint = Create(Root, null, 0x013E, "WhitePoint", true, [("Exif.Image.WhitePoint", "Image")]);
 
     /// <summary>
-    /// The chromaticity of the three primary colors of the image. Normally this tag is not necessary, since colorspace is specified in the colorspace information tag (<ColorSpace>).
+    /// The chromaticity of the three primary colors of the image. Normally this tag is not necessary, since colorspace is specified in the colorspace information tag (&lt;ColorSpace&gt;).
     /// </summary>
     /// <remarks>
     /// Expected type is URational[6].
@@ -198,7 +198,7 @@ public class TagIfd : Tag
     public static readonly Tag YCbCrSubSampling = Create(Root, null, 0x0212, "YCbCrSubSampling", true, [("Exif.Image.YCbCrSubSampling", "Image")]);
 
     /// <summary>
-    /// The position of chrominance components in relation to the luminance component. This field is designated only for JPEG compressed data or uncompressed YCbCr data. The TIFF default is 1 (centered); but when Y:Cb:Cr = 4:2:2 it is recommended in this standard that 2 (co-sited) be used to record data, in order to improve the image quality when viewed on TV systems. When this field does not exist, the reader shall assume the TIFF default. In the case of Y:Cb:Cr = 4:2:0, the TIFF default (centered) is recommended. If the reader does not have the capability of supporting both kinds of <YCbCrPositioning>, it shall follow the TIFF default regardless of the value in this field. It is preferable that readers be able to support both centered and co-sited positioning.
+    /// The position of chrominance components in relation to the luminance component. This field is designated only for JPEG compressed data or uncompressed YCbCr data. The TIFF default is 1 (centered); but when Y:Cb:Cr = 4:2:2 it is recommended in this standard that 2 (co-sited) be used to record data, in order to improve the image quality when viewed on TV systems. When this field does not exist, the reader shall assume the TIFF default. In the case of Y:Cb:Cr = 4:2:0, the TIFF default (centered) is recommended. If the reader does not have the capability of supporting both kinds of &lt;YCbCrPositioning&gt;, it shall follow the TIFF default regardless of the value in this field. It is preferable that readers be able to support both centered and co-sited positioning.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16.

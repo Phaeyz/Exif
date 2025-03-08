@@ -1,9 +1,9 @@
-# TagGpsInfo.Gpsdop field
+# TagGpsInfo.GpsDop field
 
 Indicates the GPS DOP (data degree of precision). An HDOP value is written during two-dimensional measurement, and PDOP during three-dimensional measurement.
 
 ```csharp
-public static readonly Tag Gpsdop;
+public static readonly Tag GpsDop;
 ```
 
 ## Remarks

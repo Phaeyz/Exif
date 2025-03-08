@@ -1,8 +1,14 @@
 # TagGpsInfo.GpsTimeStamp field
 
+Indicates the time as UTC (Coordinated Universal Time). &lt;TimeStamp&gt; is expressed as three RATIONAL values giving the hour, minute, and second (atomic clock).
+
 ```csharp
 public static readonly Tag GpsTimeStamp;
 ```
+
+## Remarks
+
+Expected type is URational[3].
 
 ## See Also
 

@@ -1,8 +1,14 @@
 # TagIfd.PrimaryChromaticities field
 
+The chromaticity of the three primary colors of the image. Normally this tag is not necessary, since colorspace is specified in the colorspace information tag (&lt;ColorSpace&gt;).
+
 ```csharp
 public static readonly Tag PrimaryChromaticities;
 ```
+
+## Remarks
+
+Expected type is URational[6].
 
 ## See Also
 

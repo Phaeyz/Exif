@@ -1,8 +1,14 @@
 # TagExifIfd.FocalPlaneXResolution field
 
+Indicates the number of pixels in the image width (X) direction per &lt;FocalPlaneResolutionUnit&gt; on the camera focal plane.
+
 ```csharp
 public static readonly Tag FocalPlaneXResolution;
 ```
+
+## Remarks
+
+Expected type is URational.
 
 ## See Also
 

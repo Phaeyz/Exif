@@ -1,8 +1,14 @@
 # TagExifIfd.FocalPlaneResolutionUnit field
 
+Indicates the unit for measuring &lt;FocalPlaneXResolution&gt; and &lt;FocalPlaneYResolution&gt;. This value is the same as the &lt;ResolutionUnit&gt;.
+
 ```csharp
 public static readonly Tag FocalPlaneResolutionUnit;
 ```
+
+## Remarks
+
+Expected type is UInt16.
 
 ## See Also
 

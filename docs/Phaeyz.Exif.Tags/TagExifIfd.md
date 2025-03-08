@@ -20,7 +20,7 @@ public class TagExifIfd : Tag
 | static readonly [CameraFirmware](TagExifIfd/CameraFirmware.md) | This tag records the name and version of the software or firmware of the camera used to generate the image. |
 | static readonly [CfaPattern](TagExifIfd/CfaPattern.md) | Indicates the color filter array (CFA) geometric pattern of the image sensor when a one-chip color area sensor is used. It does not apply to all sensing methods. |
 | static readonly [ColorSpace](TagExifIfd/ColorSpace.md) | The color space information tag is always recorded as the color space specifier. Normally sRGB is used to define the color space based on the PC monitor conditions and environment. If a color space other than sRGB is used, Uncalibrated is set. Image data recorded as Uncalibrated can be treated as sRGB when it is converted to FlashPix. |
-| static readonly [ComponentsConfiguration](TagExifIfd/ComponentsConfiguration.md) |  |
+| static readonly [ComponentsConfiguration](TagExifIfd/ComponentsConfiguration.md) | Information specific to compressed data. The channels of each component are arranged in order from the 1st component to the 4th. For uncompressed data the data arrangement is given in the &lt;PhotometricInterpretation&gt; tag. However, since &lt;PhotometricInterpretation&gt; can only express the order of Y, Cb and Cr, this tag is provided for cases when compressed data uses components other than Y, Cb, and Cr and to enable support of other sequences. |
 | static readonly [CompositeImage](TagExifIfd/CompositeImage.md) | Indicates whether the recorded image is a composite image or not. |
 | static readonly [CompositeImageCount](TagExifIfd/CompositeImageCount.md) | Indicates the number of the source images (tentatively recorded images) captured for a composite Image. |
 | static readonly [CompositeImageExposureTimes](TagExifIfd/CompositeImageExposureTimes.md) | For a composite image, records the parameters relating exposure time of the exposures for generating the said composite image, such as respective exposure times of captured source images (tentatively recorded images). |
@@ -48,10 +48,10 @@ public class TagExifIfd : Tag
 | static readonly [FlashpixVersion](TagExifIfd/FlashpixVersion.md) | The FlashPix format version supported by a FPXR file. |
 | static readonly [FNumber](TagExifIfd/FNumber.md) | The F number. |
 | static readonly [FocalLength](TagExifIfd/FocalLength.md) | The actual focal length of the lens, in mm. Conversion is not made to the focal length of a 35 mm film camera. |
-| static readonly [FocalLengthIn35MmFormat](TagExifIfd/FocalLengthIn35MmFormat.md) |  |
-| static readonly [FocalPlaneResolutionUnit](TagExifIfd/FocalPlaneResolutionUnit.md) |  |
-| static readonly [FocalPlaneXResolution](TagExifIfd/FocalPlaneXResolution.md) |  |
-| static readonly [FocalPlaneYResolution](TagExifIfd/FocalPlaneYResolution.md) |  |
+| static readonly [FocalLengthIn35MmFormat](TagExifIfd/FocalLengthIn35MmFormat.md) | This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the &lt;FocalLength&gt; tag. |
+| static readonly [FocalPlaneResolutionUnit](TagExifIfd/FocalPlaneResolutionUnit.md) | Indicates the unit for measuring &lt;FocalPlaneXResolution&gt; and &lt;FocalPlaneYResolution&gt;. This value is the same as the &lt;ResolutionUnit&gt;. |
+| static readonly [FocalPlaneXResolution](TagExifIfd/FocalPlaneXResolution.md) | Indicates the number of pixels in the image width (X) direction per &lt;FocalPlaneResolutionUnit&gt; on the camera focal plane. |
+| static readonly [FocalPlaneYResolution](TagExifIfd/FocalPlaneYResolution.md) | Indicates the number of pixels in the image height (V) direction per &lt;FocalPlaneResolutionUnit&gt; on the camera focal plane. |
 | static readonly [GainControl](TagExifIfd/GainControl.md) | This tag indicates the degree of overall image gain adjustment. |
 | static readonly [Gamma](TagExifIfd/Gamma.md) | Indicates the value of coefficient gamma. The formula of transfer function used for image reproduction is expressed as follows: (reproduced value) = (input value)^gamma. Both reproduced value and input value indicate normalized value, whose minimum value is 0 and maximum value is 1. |
 | static readonly [GooglePlusUploadCode](TagExifIfd/GooglePlusUploadCode.md) | GooglePlusUploadCode (0x9009) |
@@ -65,11 +65,11 @@ public class TagExifIfd : Tag
 | static readonly [InteroperabilityIfd](TagExifIfd/InteroperabilityIfd.md) | Interoperability IFD is composed of tags which stores the information to ensure the Interoperability and pointed by the following tag located in Exif IFD. The Interoperability structure of Interoperability IFD is the same as TIFF defined IFD structure but does not contain the image data characteristically compared with normal TIFF IFD. |
 | static readonly [Iso](TagExifIfd/Iso.md) | Indicates the ISO Speed and ISO Latitude of the camera or input device as specified in ISO 12232. |
 | static readonly [IsoSpeed](TagExifIfd/IsoSpeed.md) | This tag indicates the ISO speed value of a camera or input device that is defined in ISO 12232. When recording this tag, the PhotographicSensitivity and SensitivityType tags shall also be recorded. |
-| static readonly [IsoSpeedLatitudeYyy](TagExifIfd/IsoSpeedLatitudeYyy.md) | This tag indicates the ISO speed latitude yyy value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and ISOSpeedLatitudezzz. |
-| static readonly [IsoSpeedLatitudeZzz](TagExifIfd/IsoSpeedLatitudeZzz.md) | This tag indicates the ISO speed latitude zzz value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and ISOSpeedLatitudeyyy. |
+| static readonly [IsoSpeedLatitudeYyy](TagExifIfd/IsoSpeedLatitudeYyy.md) | This tag indicates the ISO speed latitude yyy value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and IsoSpeedLatitudeZzz. |
+| static readonly [IsoSpeedLatitudeZzz](TagExifIfd/IsoSpeedLatitudeZzz.md) | This tag indicates the ISO speed latitude zzz value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and IsoSpeedLatitudeYyy. |
 | static readonly [Lens](TagExifIfd/Lens.md) | Lens (0xFDEA) |
 | static readonly [LensInfo](TagExifIfd/LensInfo.md) | This tag notes minimum focal length, maximum focal length, minimum F number in the minimum focal length, and minimum F number in the maximum focal length, which are specification information for the lens that was used in photography. When the minimum F number is unknown, the notation is 0/0 |
-| static readonly [LensMake](TagExifIfd/LensMake.md) | This tag records the lens manufactor as an ASCII string. |
+| static readonly [LensMake](TagExifIfd/LensMake.md) | This tag records the lens manufacturer as an ASCII string. |
 | static readonly [LensModel](TagExifIfd/LensModel.md) | This tag records the lens's model name and model number as an ASCII string. |
 | static readonly [LensSerialNumber](TagExifIfd/LensSerialNumber.md) | This tag records the serial number of the interchangeable lens that was used in photography as an ASCII string. |
 | static readonly [LightSource](TagExifIfd/LightSource.md) | The kind of light source. |
@@ -82,7 +82,7 @@ public class TagExifIfd : Tag
 | static readonly [OffsetTime](TagExifIfd/OffsetTime.md) | Time difference from Universal Time Coordinated including daylight saving time of DateTime tag. |
 | static readonly [OffsetTimeDigitized](TagExifIfd/OffsetTimeDigitized.md) | Time difference from Universal Time Coordinated including daylight saving time of DateTimeDigitized tag. |
 | static readonly [OffsetTimeOriginal](TagExifIfd/OffsetTimeOriginal.md) | Time difference from Universal Time Coordinated including daylight saving time of DateTimeOriginal tag. |
-| static readonly [OptoElectricConvFactor](TagExifIfd/OptoElectricConvFactor.md) |  |
+| static readonly [OptoElectricConvFactor](TagExifIfd/OptoElectricConvFactor.md) | Indicates the Opto-Electoric Conversion Function (OECF) specified in ISO 14524. &lt;OECF&gt; is the relationship between the camera optical input and the image values. |
 | static readonly [OwnerName](TagExifIfd/OwnerName.md) | This tag records the owner of a camera used in photography as an ASCII string. |
 | static readonly [Padding](TagExifIfd/Padding.md) | Padding (0xEA1C) |
 | static readonly [Photographer](TagExifIfd/Photographer.md) | This tag records the name of the photographer. |
@@ -94,7 +94,7 @@ public class TagExifIfd : Tag
 | static readonly [RelatedSoundFile](TagExifIfd/RelatedSoundFile.md) | This tag is used to record the name of an audio file related to the image data. The only relational information recorded here is the Exif audio file name and extension (an ASCII string consisting of 8 characters + '.' + 3 characters). The path is not recorded. |
 | static readonly [Saturation](TagExifIfd/Saturation.md) | This tag indicates the direction of saturation processing applied by the camera when the image was shot. |
 | static readonly [SaturationAlt](TagExifIfd/SaturationAlt.md) | Saturation (0xFE55) |
-| static readonly [SceneCaptureType](TagExifIfd/SceneCaptureType.md) |  |
+| static readonly [SceneCaptureType](TagExifIfd/SceneCaptureType.md) | This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was shot. Note that this differs from the &lt;SceneType&gt; tag. |
 | static readonly [SceneType](TagExifIfd/SceneType.md) | Indicates the type of scene. If a DSC recorded the image, this tag value must always be set to 1, indicating that the image was directly photographed. |
 | static readonly [SecurityClassification](TagExifIfd/SecurityClassification.md) | Security classification assigned to the image. |
 | static readonly [SelfTimerMode](TagExifIfd/SelfTimerMode.md) | Number of seconds image capture was delayed from button press. |
@@ -113,12 +113,12 @@ public class TagExifIfd : Tag
 | static readonly [SubjectArea](TagExifIfd/SubjectArea.md) | This tag indicates the location and area of the main subject in the overall scene. |
 | static readonly [SubjectDistance](TagExifIfd/SubjectDistance.md) | The distance to the subject, given in meters. |
 | static readonly [SubjectDistanceRange](TagExifIfd/SubjectDistanceRange.md) | This tag indicates the distance to the subject. |
-| static readonly [SubjectLocation](TagExifIfd/SubjectLocation.md) |  |
-| static readonly [SubSecTime](TagExifIfd/SubSecTime.md) |  |
-| static readonly [SubSecTimeDigitized](TagExifIfd/SubSecTimeDigitized.md) |  |
-| static readonly [SubSecTimeOriginal](TagExifIfd/SubSecTimeOriginal.md) |  |
+| static readonly [SubjectLocation](TagExifIfd/SubjectLocation.md) | Indicates the location of the main subject in the scene. The value of this tag represents the pixel at the center of the main subject relative to the left edge, prior to rotation processing as per the &lt;Rotation&gt; tag. The first value indicates the X column number and second indicates the Y row number. |
+| static readonly [SubSecTime](TagExifIfd/SubSecTime.md) | A tag used to record fractions of seconds for the &lt;DateTime&gt; tag. |
+| static readonly [SubSecTimeDigitized](TagExifIfd/SubSecTimeDigitized.md) | A tag used to record fractions of seconds for the &lt;DateTimeDigitized&gt; tag. |
+| static readonly [SubSecTimeOriginal](TagExifIfd/SubSecTimeOriginal.md) | A tag used to record fractions of seconds for the &lt;DateTimeOriginal&gt; tag. |
 | static readonly [TimeZoneOffset](TagExifIfd/TimeZoneOffset.md) | This optional tag encodes the time zone of the camera clock (relative to Greenwich Mean Time) used to create the DataTimeOriginal tag-value when the picture was taken. It may also contain the time zone offset of the clock used to create the DateTime tag-value when the image was modified. |
-| static readonly [UserComment](TagExifIfd/UserComment.md) |  |
+| static readonly [UserComment](TagExifIfd/UserComment.md) | A tag for Exif users to write keywords or comments on the image besides those in &lt;ImageDescription&gt;, and without the character code limitations of the &lt;ImageDescription&gt; tag. |
 | static readonly [WaterDepth](TagExifIfd/WaterDepth.md) | Water depth as the ambient situation at the shot, for example the water depth of the camera at underwater photography. The unit is m. |
 | static readonly [WhiteBalance](TagExifIfd/WhiteBalance.md) | This tag indicates the white balance mode set when the image was shot. |
 | static readonly [WhiteBalanceAlt](TagExifIfd/WhiteBalanceAlt.md) | WhiteBalance (0xFE4E) |

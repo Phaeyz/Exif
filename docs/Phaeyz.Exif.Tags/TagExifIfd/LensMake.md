@@ -1,6 +1,6 @@
 # TagExifIfd.LensMake field
 
-This tag records the lens manufactor as an ASCII string.
+This tag records the lens manufacturer as an ASCII string.
 
 ```csharp
 public static readonly Tag LensMake;

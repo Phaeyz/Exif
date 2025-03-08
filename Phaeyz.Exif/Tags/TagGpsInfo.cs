@@ -6,7 +6,7 @@
 public class TagGpsInfo : Tag
 {
     /// <summary>
-    /// Indicates the version of <GPSInfoIFD>. The version is given as 2.0.0.0. This tag is mandatory when <GPSInfo> tag is present. (Note: The <GPSVersionID> tag is given in bytes, unlike the <ExifVersion> tag. When the version is 2.0.0.0, the tag value is 02000000.H).
+    /// Indicates the version of &lt;GPSInfoIFD&gt;. The version is given as 2.0.0.0. This tag is mandatory when &lt;GPSInfo&gt; tag is present. (Note: The &lt;GPSVersionID&gt; tag is given in bytes, unlike the &lt;ExifVersion&gt; tag. When the version is 2.0.0.0, the tag value is 02000000.H).
     /// </summary>
     /// <remarks>
     /// Expected type is Byte[4].
@@ -62,7 +62,7 @@ public class TagGpsInfo : Tag
     public static readonly Tag GpsAltitude = Create(TagIfd0.GpsInfo, null, 0x0006, "GPSAltitude", true, [("Exif.GPSInfo.GPSAltitude", "GPSInfo")]);
 
     /// <summary>
-    /// Indicates the time as UTC (Coordinated Universal Time). <TimeStamp> is expressed as three RATIONAL values giving the hour, minute, and second (atomic clock).
+    /// Indicates the time as UTC (Coordinated Universal Time). &lt;TimeStamp&gt; is expressed as three RATIONAL values giving the hour, minute, and second (atomic clock).
     /// </summary>
     /// <remarks>
     /// Expected type is URational[3].
@@ -99,7 +99,7 @@ public class TagGpsInfo : Tag
     /// <remarks>
     /// Expected type is URational.
     /// </remarks>
-    public static readonly Tag Gpsdop = Create(TagIfd0.GpsInfo, null, 0x000B, "GPSDOP", true, [("Exif.GPSInfo.GPSDOP", "GPSInfo")]);
+    public static readonly Tag GpsDop = Create(TagIfd0.GpsInfo, null, 0x000B, "GPSDOP", true, [("Exif.GPSInfo.GPSDOP", "GPSInfo")]);
 
     /// <summary>
     /// Indicates the unit used to express the GPS receiver speed of movement. "K" "M" and "N" represents kilometers per hour, miles per hour, and knots.

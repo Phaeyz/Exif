@@ -1,8 +1,14 @@
 # TagExifIfd.OptoElectricConvFactor field
 
+Indicates the Opto-Electoric Conversion Function (OECF) specified in ISO 14524. &lt;OECF&gt; is the relationship between the camera optical input and the image values.
+
 ```csharp
 public static readonly Tag OptoElectricConvFactor;
 ```
+
+## Remarks
+
+Expected type is Undefined.
 
 ## See Also
 

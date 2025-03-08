@@ -1,8 +1,14 @@
 # TagExifIfd.FocalPlaneYResolution field
 
+Indicates the number of pixels in the image height (V) direction per &lt;FocalPlaneResolutionUnit&gt; on the camera focal plane.
+
 ```csharp
 public static readonly Tag FocalPlaneYResolution;
 ```
+
+## Remarks
+
+Expected type is URational.
 
 ## See Also
 

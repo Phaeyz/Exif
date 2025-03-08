@@ -23,8 +23,8 @@ public class ImageFileDirectory : KeyedCollection<Tag, Entry>
     /// <summary>
     /// Initializes a new image file directory that contains the items copied from the specified dictionary.
     /// </summary>
-    /// <param name="collection">
-    /// The enumerable whose items are copied to the new image file directory.
+    /// <param name="dictionary">
+    /// The dictionary whose items are copied to the new image file directory.
     /// </param>
     public ImageFileDirectory(IDictionary<Tag, Entry> dictionary) : base(dictionary) { }
 

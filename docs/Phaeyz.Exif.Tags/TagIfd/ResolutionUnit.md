@@ -1,8 +1,14 @@
 # TagIfd.ResolutionUnit field
 
+The unit for measuring &lt;XResolution&gt; and &lt;YResolution&gt;. The same unit is used for both &lt;XResolution&gt; and &lt;YResolution&gt;. If the image resolution is unknown, 2 (inches) is designated.
+
 ```csharp
 public static readonly Tag ResolutionUnit;
 ```
+
+## Remarks
+
+Expected type is UInt16.
 
 ## See Also
 
