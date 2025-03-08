@@ -475,7 +475,7 @@ public class Tag : IEquatable<Tag>
     /// <summary>
     /// Determines if the specified tag is logically equal to the current tag. Names, aliases, and behaviors are ignored.
     /// </summary>
-    /// <param name="tag">
+    /// <param name="obj">
     /// The tag which must match the current match.
     /// </param>
     /// <returns>

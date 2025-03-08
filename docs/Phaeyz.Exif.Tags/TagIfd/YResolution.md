@@ -1,8 +1,14 @@
 # TagIfd.YResolution field
 
+The number of pixels per &lt;ResolutionUnit&gt; in the &lt;ImageLength&gt; direction. The same value as &lt;XResolution&gt; is designated.
+
 ```csharp
 public static readonly Tag YResolution;
 ```
+
+## Remarks
+
+Expected type is URational.
 
 ## See Also
 

@@ -1,8 +1,14 @@
 # TagExifIfd.UserComment field
 
+A tag for Exif users to write keywords or comments on the image besides those in &lt;ImageDescription&gt;, and without the character code limitations of the &lt;ImageDescription&gt; tag.
+
 ```csharp
 public static readonly Tag UserComment;
 ```
+
+## Remarks
+
+Expected type is Undefined.
 
 ## See Also
 

@@ -1,8 +1,14 @@
 # TagExifIfd.SubSecTime field
 
+A tag used to record fractions of seconds for the &lt;DateTime&gt; tag.
+
 ```csharp
 public static readonly Tag SubSecTime;
 ```
+
+## Remarks
+
+Expected type is Ascii.
 
 ## See Also
 

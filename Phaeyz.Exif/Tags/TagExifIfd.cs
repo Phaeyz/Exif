@@ -46,7 +46,7 @@ public class TagExifIfd : Tag
     public static readonly Tag Iso = Create(TagIfd0.ExifOffset, null, 0x8827, "ISO", true, [("Exif.Image.ISOSpeedRatings", "Image"), ("Exif.Photo.ISOSpeedRatings", "Photo")]);
 
     /// <summary>
-    /// Indicates the Opto-Electoric Conversion Function (OECF) specified in ISO 14524. <OECF> is the relationship between the camera optical input and the image values.
+    /// Indicates the Opto-Electoric Conversion Function (OECF) specified in ISO 14524. &lt;OECF&gt; is the relationship between the camera optical input and the image values.
     /// </summary>
     /// <remarks>
     /// Expected type is Undefined.
@@ -102,7 +102,7 @@ public class TagExifIfd : Tag
     public static readonly Tag IsoSpeed = Create(TagIfd0.ExifOffset, null, 0x8833, "ISOSpeed", true, [("Exif.Photo.ISOSpeed", "Photo")]);
 
     /// <summary>
-    /// This tag indicates the ISO speed latitude yyy value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and ISOSpeedLatitudezzz.
+    /// This tag indicates the ISO speed latitude yyy value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and IsoSpeedLatitudeZzz.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt32.
@@ -110,7 +110,7 @@ public class TagExifIfd : Tag
     public static readonly Tag IsoSpeedLatitudeYyy = Create(TagIfd0.ExifOffset, null, 0x8834, "ISOSpeedLatitudeyyy", true, [("Exif.Photo.ISOSpeedLatitudeyyy", "Photo")]);
 
     /// <summary>
-    /// This tag indicates the ISO speed latitude zzz value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and ISOSpeedLatitudeyyy.
+    /// This tag indicates the ISO speed latitude zzz value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and IsoSpeedLatitudeYyy.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt32.
@@ -174,7 +174,7 @@ public class TagExifIfd : Tag
     public static readonly Tag OffsetTimeDigitized = Create(TagIfd0.ExifOffset, null, 0x9012, "OffsetTimeDigitized", true, [("Exif.Photo.OffsetTimeDigitized", "Photo")]);
 
     /// <summary>
-    /// Information specific to compressed data. The channels of each component are arranged in order from the 1st component to the 4th. For uncompressed data the data arrangement is given in the <PhotometricInterpretation> tag. However, since <PhotometricInterpretation> can only express the order of Y, Cb and Cr, this tag is provided for cases when compressed data uses components other than Y, Cb, and Cr and to enable support of other sequences.
+    /// Information specific to compressed data. The channels of each component are arranged in order from the 1st component to the 4th. For uncompressed data the data arrangement is given in the &lt;PhotometricInterpretation&gt; tag. However, since &lt;PhotometricInterpretation&gt; can only express the order of Y, Cb and Cr, this tag is provided for cases when compressed data uses components other than Y, Cb, and Cr and to enable support of other sequences.
     /// </summary>
     /// <remarks>
     /// Expected type is Undefined[4].
@@ -310,7 +310,7 @@ public class TagExifIfd : Tag
     public static readonly Tag MakerNote = Create(TagIfd0.ExifOffset, null, 0x927C, "MakerNote", true, [("Exif.Photo.MakerNote", "Photo")]);
 
     /// <summary>
-    /// A tag for Exif users to write keywords or comments on the image besides those in <ImageDescription>, and without the character code limitations of the <ImageDescription> tag.
+    /// A tag for Exif users to write keywords or comments on the image besides those in &lt;ImageDescription&gt;, and without the character code limitations of the &lt;ImageDescription&gt; tag.
     /// </summary>
     /// <remarks>
     /// Expected type is Undefined.
@@ -318,7 +318,7 @@ public class TagExifIfd : Tag
     public static readonly Tag UserComment = Create(TagIfd0.ExifOffset, null, 0x9286, "UserComment", true, [("Exif.Photo.UserComment", "Photo")]);
 
     /// <summary>
-    /// A tag used to record fractions of seconds for the <DateTime> tag.
+    /// A tag used to record fractions of seconds for the &lt;DateTime&gt; tag.
     /// </summary>
     /// <remarks>
     /// Expected type is Ascii.
@@ -326,7 +326,7 @@ public class TagExifIfd : Tag
     public static readonly Tag SubSecTime = Create(TagIfd0.ExifOffset, null, 0x9290, "SubSecTime", true, [("Exif.Photo.SubSecTime", "Photo")]);
 
     /// <summary>
-    /// A tag used to record fractions of seconds for the <DateTimeOriginal> tag.
+    /// A tag used to record fractions of seconds for the &lt;DateTimeOriginal&gt; tag.
     /// </summary>
     /// <remarks>
     /// Expected type is Ascii.
@@ -334,7 +334,7 @@ public class TagExifIfd : Tag
     public static readonly Tag SubSecTimeOriginal = Create(TagIfd0.ExifOffset, null, 0x9291, "SubSecTimeOriginal", true, [("Exif.Photo.SubSecTimeOriginal", "Photo")]);
 
     /// <summary>
-    /// A tag used to record fractions of seconds for the <DateTimeDigitized> tag.
+    /// A tag used to record fractions of seconds for the &lt;DateTimeDigitized&gt; tag.
     /// </summary>
     /// <remarks>
     /// Expected type is Ascii.
@@ -470,7 +470,7 @@ public class TagExifIfd : Tag
     public static readonly Tag SpatialFrequencyResponse = Create(TagIfd0.ExifOffset, null, 0xA20C, "SpatialFrequencyResponse", true, [("Exif.Photo.SpatialFrequencyResponse", "Photo")]);
 
     /// <summary>
-    /// Indicates the number of pixels in the image width (X) direction per <FocalPlaneResolutionUnit> on the camera focal plane.
+    /// Indicates the number of pixels in the image width (X) direction per &lt;FocalPlaneResolutionUnit&gt; on the camera focal plane.
     /// </summary>
     /// <remarks>
     /// Expected type is URational.
@@ -478,7 +478,7 @@ public class TagExifIfd : Tag
     public static readonly Tag FocalPlaneXResolution = Create(TagIfd0.ExifOffset, null, 0xA20E, "FocalPlaneXResolution", true, [("Exif.Photo.FocalPlaneXResolution", "Photo")]);
 
     /// <summary>
-    /// Indicates the number of pixels in the image height (V) direction per <FocalPlaneResolutionUnit> on the camera focal plane.
+    /// Indicates the number of pixels in the image height (V) direction per &lt;FocalPlaneResolutionUnit&gt; on the camera focal plane.
     /// </summary>
     /// <remarks>
     /// Expected type is URational.
@@ -486,7 +486,7 @@ public class TagExifIfd : Tag
     public static readonly Tag FocalPlaneYResolution = Create(TagIfd0.ExifOffset, null, 0xA20F, "FocalPlaneYResolution", true, [("Exif.Photo.FocalPlaneYResolution", "Photo")]);
 
     /// <summary>
-    /// Indicates the unit for measuring <FocalPlaneXResolution> and <FocalPlaneYResolution>. This value is the same as the <ResolutionUnit>.
+    /// Indicates the unit for measuring &lt;FocalPlaneXResolution&gt; and &lt;FocalPlaneYResolution&gt;. This value is the same as the &lt;ResolutionUnit&gt;.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16.
@@ -494,7 +494,7 @@ public class TagExifIfd : Tag
     public static readonly Tag FocalPlaneResolutionUnit = Create(TagIfd0.ExifOffset, null, 0xA210, "FocalPlaneResolutionUnit", true, [("Exif.Photo.FocalPlaneResolutionUnit", "Photo")]);
 
     /// <summary>
-    /// Indicates the location of the main subject in the scene. The value of this tag represents the pixel at the center of the main subject relative to the left edge, prior to rotation processing as per the <Rotation> tag. The first value indicates the X column number and second indicates the Y row number.
+    /// Indicates the location of the main subject in the scene. The value of this tag represents the pixel at the center of the main subject relative to the left edge, prior to rotation processing as per the &lt;Rotation&gt; tag. The first value indicates the X column number and second indicates the Y row number.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16[2].
@@ -574,7 +574,7 @@ public class TagExifIfd : Tag
     public static readonly Tag DigitalZoomRatio = Create(TagIfd0.ExifOffset, null, 0xA404, "DigitalZoomRatio", true, [("Exif.Photo.DigitalZoomRatio", "Photo")]);
 
     /// <summary>
-    /// This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the <FocalLength> tag.
+    /// This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the &lt;FocalLength&gt; tag.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16.
@@ -582,7 +582,7 @@ public class TagExifIfd : Tag
     public static readonly Tag FocalLengthIn35MmFormat = Create(TagIfd0.ExifOffset, null, 0xA405, "FocalLengthIn35mmFormat", true, [("Exif.Photo.FocalLengthIn35mmFilm", "Photo")]);
 
     /// <summary>
-    /// This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was shot. Note that this differs from the <SceneType> tag.
+    /// This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was shot. Note that this differs from the &lt;SceneType&gt; tag.
     /// </summary>
     /// <remarks>
     /// Expected type is UInt16.
@@ -670,7 +670,7 @@ public class TagExifIfd : Tag
     public static readonly Tag LensInfo = Create(TagIfd0.ExifOffset, null, 0xA432, "LensInfo", true, [("Exif.Photo.LensSpecification", "Photo")]);
 
     /// <summary>
-    /// This tag records the lens manufactor as an ASCII string.
+    /// This tag records the lens manufacturer as an ASCII string.
     /// </summary>
     /// <remarks>
     /// Expected type is Ascii.

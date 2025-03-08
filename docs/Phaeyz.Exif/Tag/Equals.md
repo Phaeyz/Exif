@@ -8,7 +8,7 @@ public override bool Equals(object? obj)
 
 | parameter | description |
 | --- | --- |
-| tag | The tag which must match the current match. |
+| obj | The tag which must match the current match. |
 
 ## Return Value
 

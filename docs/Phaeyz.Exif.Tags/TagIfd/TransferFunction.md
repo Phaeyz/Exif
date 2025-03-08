@@ -1,8 +1,14 @@
 # TagIfd.TransferFunction field
 
+A transfer function for the image, described in tabular style. Normally this tag is not necessary, since color space is specified in the color space information tag (&lt;ColorSpace&gt;).
+
 ```csharp
 public static readonly Tag TransferFunction;
 ```
+
+## Remarks
+
+Expected type is UInt16[768].
 
 ## See Also
 

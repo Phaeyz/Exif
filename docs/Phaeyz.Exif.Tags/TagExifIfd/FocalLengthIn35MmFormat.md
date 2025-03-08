@@ -1,8 +1,14 @@
 # TagExifIfd.FocalLengthIn35MmFormat field
 
+This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the &lt;FocalLength&gt; tag.
+
 ```csharp
 public static readonly Tag FocalLengthIn35MmFormat;
 ```
+
+## Remarks
+
+Expected type is UInt16.
 
 ## See Also
 

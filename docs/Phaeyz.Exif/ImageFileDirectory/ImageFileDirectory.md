@@ -23,7 +23,7 @@ public ImageFileDirectory(IDictionary<Tag, Entry> dictionary)
 
 | parameter | description |
 | --- | --- |
-| collection | The enumerable whose items are copied to the new image file directory. |
+| dictionary | The dictionary whose items are copied to the new image file directory. |
 
 ## See Also
 

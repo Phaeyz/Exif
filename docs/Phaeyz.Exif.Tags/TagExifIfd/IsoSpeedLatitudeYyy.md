@@ -1,6 +1,6 @@
 # TagExifIfd.IsoSpeedLatitudeYyy field
 
-This tag indicates the ISO speed latitude yyy value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and ISOSpeedLatitudezzz.
+This tag indicates the ISO speed latitude yyy value of a camera or input device that is defined in ISO 12232. However, this tag shall not be recorded without ISOSpeed and IsoSpeedLatitudeZzz.
 
 ```csharp
 public static readonly Tag IsoSpeedLatitudeYyy;

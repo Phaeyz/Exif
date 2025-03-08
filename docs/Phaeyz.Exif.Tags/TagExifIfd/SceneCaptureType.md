@@ -1,8 +1,14 @@
 # TagExifIfd.SceneCaptureType field
 
+This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was shot. Note that this differs from the &lt;SceneType&gt; tag.
+
 ```csharp
 public static readonly Tag SceneCaptureType;
 ```
+
+## Remarks
+
+Expected type is UInt16.
 
 ## See Also
 

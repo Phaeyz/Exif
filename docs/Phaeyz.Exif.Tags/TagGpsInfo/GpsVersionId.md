@@ -1,8 +1,14 @@
 # TagGpsInfo.GpsVersionId field
 
+Indicates the version of &lt;GPSInfoIFD&gt;. The version is given as 2.0.0.0. This tag is mandatory when &lt;GPSInfo&gt; tag is present. (Note: The &lt;GPSVersionID&gt; tag is given in bytes, unlike the &lt;ExifVersion&gt; tag. When the version is 2.0.0.0, the tag value is 02000000.H).
+
 ```csharp
 public static readonly Tag GpsVersionId;
 ```
+
+## Remarks
+
+Expected type is Byte[4].
 
 ## See Also
 

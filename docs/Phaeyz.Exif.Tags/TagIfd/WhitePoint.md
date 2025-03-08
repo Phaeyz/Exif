@@ -1,8 +1,14 @@
 # TagIfd.WhitePoint field
 
+The chromaticity of the white point of the image. Normally this tag is not necessary, since color space is specified in the colorspace information tag (&lt;ColorSpace&gt;).
+
 ```csharp
 public static readonly Tag WhitePoint;
 ```
+
+## Remarks
+
+Expected type is URational[2].
 
 ## See Also
 
